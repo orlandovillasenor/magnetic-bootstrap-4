@@ -9,7 +9,7 @@ return [
 			'font_lato' => [
 				'path' => '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic',
 				'dependencies' => [],
-				'version' => '',
+				'version' => null,
 				'media' => '',
 			],
 			
@@ -52,17 +52,7 @@ return [
 		'Primary Navigation' => 'primary_navigation',
 	],
 
-	'widgets' => [
-		
-		// 'Blog Sidebar' => [
-		// 	'id' =>	'widget-blog-sidebar',
-		// 	'description' => 'Sidebar for blog',
-		// 	'before_widget' => '<div class="widget %1$s %2$s">',
-		// 	'after_widget' => '</div>',
-		// 	'before_title' => '<h3>',
-		// 	'after_title' => '</h3>',
-		// ],
-	],
+	'widgets' => [],
 
 	'autoload' => [
 		'theme/Assets.php',

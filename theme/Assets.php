@@ -41,7 +41,7 @@ class Assets {
                 {
                     wp_enqueue_script($script, $path, $param['dependencies'], $param['version'], $param['in_footer'] );    
                 }
-                
+
                 if ( ! is_admin() )
                 {
                     wp_enqueue_script($script, $path, $param['dependencies'], $param['version'], $param['in_footer'] );    

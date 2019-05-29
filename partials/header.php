@@ -4,6 +4,6 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse" id="menu-primary-navigation">
-        <?php do_action('show_menu', 'primary_navigation', 'navbar-nav ml-auto'); ?>
+        <?php do_action('magnetic_menu', 'primary_navigation', 'navbar-nav ml-auto'); ?>
     </div>
 </nav>
