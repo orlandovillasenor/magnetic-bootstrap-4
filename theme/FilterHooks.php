@@ -2,7 +2,7 @@
 
 namespace Magnetic;
 
-class Filters {
+class FilterHooks {
     
     /**
      * Registers filter hooks with WordPress

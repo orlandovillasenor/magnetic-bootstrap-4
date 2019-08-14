@@ -59,8 +59,8 @@ return [
 		'theme/Menus.php',
 		'theme/Widgets.php',
 		'theme/Walker.php',
-		'theme/Actions.php',
-		'theme/Filters.php',
+		'theme/ActionHooks.php',
+		'theme/FilterHooks.php',
 		'theme/Wrapper.php',
 	],
 

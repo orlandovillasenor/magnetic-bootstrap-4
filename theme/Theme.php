@@ -55,8 +55,8 @@ class Theme {
 	{
 		Menus::register($this->config['menus']);
 		Widgets::register($this->config['widgets']);
-		Actions::register($this->config);
-		Filters::register();
+		ActionHooks::register($this->config);
+		FilterHooks::register();
 	}
 }
 

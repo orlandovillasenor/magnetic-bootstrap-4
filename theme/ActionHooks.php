@@ -2,7 +2,7 @@
 
 namespace Magnetic;
 
-class Actions {
+class ActionHooks {
 
     protected static $assets;
 
