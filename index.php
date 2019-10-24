@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<section class="container-fluid">
 	
 	<div class="content">	
 	
@@ -24,4 +24,4 @@
 	
 	</div>
 
-</div>
+</section>

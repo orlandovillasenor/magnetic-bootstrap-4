@@ -41,8 +41,12 @@ class Theme {
 		// Theme Support
 		add_theme_support('title-tag');
     	add_theme_support('post-thumbnails');
-    	add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
-    	add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
+    	add_theme_support(
+    		'html5', 
+    		[
+    			'caption', 'comment-form', 'comment-list', 'gallery', 'search-form'
+    		]
+    	);
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'responsive-embeds' );

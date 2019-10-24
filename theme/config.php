@@ -6,7 +6,7 @@ return [
 		
 		'styles' => [
 
-			'font_lato' => [
+			'google_fonts' => [
 				'path' => '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic',
 				'dependencies' => [],
 				'version' => null,

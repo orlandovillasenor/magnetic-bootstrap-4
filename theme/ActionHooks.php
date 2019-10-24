@@ -12,6 +12,7 @@ class ActionHooks {
     public static function register( $config )
     {
         self::$assets = $config['assets'];
+        // WordPress Action Hooks
         add_action('wp_enqueue_scripts', array(__CLASS__, 'enqueue_scripts'));
         add_action('body_class', array(__CLASS__, 'body_class'));
         add_action('excerpt_more', array(__CLASS__, 'excerpt_more'));
@@ -53,7 +54,7 @@ class ActionHooks {
         } elseif (is_search()) {
             echo sprintf(__('Search Results for %s', 'magnetic'), get_search_query());
         } elseif (is_404()) {
-            echo __('Not Found', 'magnetic');
+            echo __('404 Not Found', 'magnetic');
             } else {
             echo get_the_title();
         }        
@@ -112,11 +113,11 @@ class ActionHooks {
     }
     
     /**
-     * Remove Comments from admin menu
+     * Callback for WordPress 'admin_menu' action hook
      */
     public static function admin_menu()
     {
-        remove_menu_page('edit-comments.php');
+        //remove_menu_page('edit-comments.php');
     }
 
 }

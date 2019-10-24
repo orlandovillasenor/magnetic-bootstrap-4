@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<section class="container-fluid">
 		
 	<?php get_template_part('partials/page', 'header'); ?>
 
@@ -12,4 +12,4 @@
 	
 	</div>
 		
-</div>
+</section>

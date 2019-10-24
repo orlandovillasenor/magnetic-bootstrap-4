@@ -1,5 +1,5 @@
-<div class="container-fluid">
+<section class="container-fluid">
 
 	<p>&copy; <?= date('Y'); ?> <?= bloginfo('name'); ?></p>
 
-</div>
+</section>

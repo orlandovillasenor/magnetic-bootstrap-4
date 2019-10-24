@@ -9,6 +9,7 @@ class FilterHooks {
      */
     public static function register()
     {
+        // WordPress Action Hooks
         add_filter('template_include', array(__CLASS__, 'template_include'), 109);
         add_filter( 'image_size_names_choose', array(__CLASS__, 'image_size_names_choose'));
     }
