@@ -17,6 +17,7 @@ class ActionHooks {
         add_action('body_class', array(__CLASS__, 'body_class'));
         add_action('excerpt_more', array(__CLASS__, 'excerpt_more'));
         add_action('admin_menu', array(__CLASS__, 'admin_menu'));
+        remove_action('welcome_panel', 'wp_welcome_panel');        
 
         // Custom Theme Action Hooks
         add_action('magnetic_content', array(__CLASS__, 'magnetic_content'));

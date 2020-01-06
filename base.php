@@ -5,6 +5,8 @@
         
     <body <?php body_class(); ?>>
         
+        <?php wp_body_open(); ?>
+        
         <header class="header">            
             
             <?php get_template_part('partials/header'); ?>
