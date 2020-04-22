@@ -1,15 +1,23 @@
-<section class="container-fluid">
-		
-	<?php get_template_part('partials/page', 'header'); ?>
+<?php get_header(); ?>
 
-	<div class="content">
-		
-		<div class="alert alert-warning">
-  			<?php _e('Sorry, but the page you were trying to view does not exist.', 'magnetic'); ?>
+<main class="main" role="document">
+	
+	<section class="container-fluid">
+
+		<?php get_template_part('partials/page', 'header'); ?>
+
+		<div class="content">
+
+			<div class="alert alert-warning">
+				<?php _e('Sorry, but the page you were trying to view does not exist.', 'magnetic'); ?>
+			</div>
+
+			<?php get_search_form(); ?>
+
 		</div>
 
-		<?php get_search_form(); ?>
+	</section>
 	
-	</div>
-		
-</section>
+</main>
+
+<?php get_footer(); ?>

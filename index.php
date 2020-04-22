@@ -1,27 +1,35 @@
-<section class="container-fluid">
+<?php get_header(); ?>
+
+<main class="main" role="document">
 	
-	<div class="content">	
-	
-		<?php get_template_part('partials/page', 'header'); ?>
-		
-		<?php if (!have_posts()) : ?>
-		
-			<div class="alert alert-warning">
-				
-				<?php _e('Sorry, no results were found.', 'magnetic'); ?>
-			
-			</div>
-		
-		<?php get_search_form(); ?>
+	<section class="container-fluid">
 
-		<?php endif; ?>
+		<div class="content">	
 
-		<?php while (have_posts()) : the_post(); ?>
+			<?php get_template_part('partials/page', 'header'); ?>
 
-			<?php get_template_part('partials/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+			<?php if (!have_posts()) : ?>
 
-		<?php endwhile; the_posts_navigation(); ?>
-	
-	</div>
+				<div class="alert alert-warning">
 
-</section>
+					<?php _e('Sorry, no results were found.', 'magnetic'); ?>
+
+				</div>
+
+			<?php get_search_form(); ?>
+
+			<?php endif; ?>
+
+			<?php while (have_posts()) : the_post(); ?>
+
+				<?php get_template_part('partials/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+
+			<?php endwhile; the_posts_navigation(); ?>
+
+		</div>
+
+	</section>
+
+</main>
+
+<?php get_footer(); ?>

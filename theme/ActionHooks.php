@@ -20,7 +20,6 @@ class ActionHooks {
         remove_action('welcome_panel', 'wp_welcome_panel');        
 
         // Custom Theme Action Hooks
-        add_action('magnetic_content', array(__CLASS__, 'magnetic_content'));
         add_action('magnetic_menu', array(__CLASS__, 'magnetic_menu'), 10, 2);
         add_action('magnetic_title', array(__CLASS__, 'magnetic_title'));
         add_action('magnetic_image', array(__CLASS__, 'magnetic_image'), 10, 3);        
@@ -30,11 +29,6 @@ class ActionHooks {
     public static function enqueue_scripts()
     {
         Assets::register( self::$assets );
-    }
-    
-    public static function magnetic_content()
-    {
-        include Wrapper::$main_template;
     }
     
     public static function magnetic_image( $id, $size = 'full', $atts = array('class' => 'img-fluid') )

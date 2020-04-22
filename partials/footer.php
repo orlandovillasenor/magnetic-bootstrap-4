@@ -1,5 +1,7 @@
-<section class="container-fluid">
+<footer class="footer">
+	<section class="container-fluid">
 
-	<p>&copy; <?= date('Y'); ?> <?= bloginfo('name'); ?></p>
+		<p>&copy; <?= date('Y'); ?> <?= bloginfo('name'); ?></p>
 
-</section>
+	</section>
+</footer>

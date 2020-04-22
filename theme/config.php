@@ -61,7 +61,6 @@ return [
 		'theme/Walker.php',
 		'theme/ActionHooks.php',
 		'theme/FilterHooks.php',
-		'theme/Wrapper.php',
 	],
 
 ];
